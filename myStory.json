@@ -1,0 +1,103 @@
+{
+    "Title": "Shipwrecked",
+    "Credits": "Created by Adam Smith (amsmith@ucsc.edu). Story by Aaron Mai",
+    "InitialLocation": "Shipwreck",
+    "Locations": {
+        "Shipwreck": {
+            "Body": "This is the shipwreck",
+            "Choices": [
+                {
+                    "Text": "Go beach",
+                    "Target": "Beach"
+                }
+            ]
+        },
+        "Beach": {
+            "Body": "This is Beach!",
+            "Choices": [
+                {
+                    "Text": "Forested Path",
+                    "Target": "Forested Path"
+                },
+                {
+                    "Text": "Sos",
+                    "Target": "SOS"
+                }
+            ]
+        },
+        "SOS": {
+            "Body": "You set up SOS",
+            "Choices": [
+                {
+                    "Text": "Finish UP",
+                    "Target": "Beach"
+                }
+            ],
+            "VisitedSOS": true
+        },
+        "Forested Path": {
+            "Body": "Welcome to Forested Path.",
+            "Choices": [
+                {
+                    "Text": "Beach",
+                    "Target": "Beach"
+                },
+                {
+                    "Text": "Clearing",
+                    "Target": "Clearing"
+                },
+                {
+                    "Text": "River",
+                    "Target": "River"
+                }
+            ]
+        },
+        "Clearing": {
+            "Body": "This is Clearing",
+            "Choices": [
+                {
+                    "Text": "Forested Path",
+                    "Target": "Forested Path"
+                },
+                {
+                    "Text": "Strange Stone",
+                    "Target": "Key"
+                }
+            ]
+        },
+        "Key": {
+            "Body": "You find a strange stone",
+            "Choices": [
+                {
+                    "Text": "Clearing",
+                    "Target": "Clearing"
+                }
+            ],
+            "VisitedKey": true,
+            "GetKey": true
+        },
+        "River": {
+            "Body": "This is River",
+            "Choices": [
+                {
+                    "Text": "Forested Path",
+                    "Target": "Forested Path"
+                },
+                {
+                    "Text": "Cave",
+                    "Target": "Cave",
+                    "PreLock": true
+                }
+            ]
+        },
+        "Cave": {
+            "Body": "This is Cave",
+            "Choices": [
+                {
+                    "Text": "River",
+                    "Target": "River"
+                }
+            ]
+        }
+    }
+}
