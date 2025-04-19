@@ -4,39 +4,39 @@
     "InitialLocation": "Shipwreck",
     "Locations": {
         "Shipwreck": {
-            "Body": "This is the shipwreck",
+            "Body": "You have vauge memories from the night before. A violent storm shaking the boat and not being able to make it to the life boat on time.\nYou awaken with your head fuzzy. You look around and seem to be on a large piece of wood between some dangerous rocks.\nYou look to find away to relative safety.",
             "Choices": [
                 {
-                    "Text": "Go beach",
+                    "Text": "Escape the shipwreck",
                     "Target": "Beach"
                 }
             ]
         },
         "Beach": {
-            "Body": "This is Beach!",
+            "Body": "You make it to the beach! Many stones dot the landscape as tranquil waves rise and fall along the shore. The sand is warm beneath your feet.",
             "Choices": [
                 {
                     "Text": "Forested Path",
                     "Target": "Forested Path"
                 },
                 {
-                    "Text": "Sos",
+                    "Text": "Gather Stones",
                     "Target": "SOS"
                 }
             ]
         },
         "SOS": {
-            "Body": "You set up SOS",
+            "Body": "You gather up stones strewn across the ground and form an \"SOS\" signal on the sandy beach. Hopefully you can survive until rescue arrives.",
             "Choices": [
                 {
-                    "Text": "Finish UP",
+                    "Text": "Finish up",
                     "Target": "Beach"
                 }
             ],
             "VisitedSOS": true
         },
         "Forested Path": {
-            "Body": "Welcome to Forested Path.",
+            "Body": "You walk onto a path through the forest. This trail seems to have been created by the local wildlife.",
             "Choices": [
                 {
                     "Text": "Beach",
@@ -53,7 +53,7 @@
             ]
         },
         "Clearing": {
-            "Body": "This is Clearing",
+            "Body": "A path from the forest leads to this clearing. A soft breeze brushes past you.",
             "Choices": [
                 {
                     "Text": "Forested Path",
@@ -66,7 +66,7 @@
             ]
         },
         "Key": {
-            "Body": "You find a strange stone",
+            "Body": "You find a strange stone near the edge of the clearing. It is round with strange markings carved into it. You decide to pick it up.",
             "Choices": [
                 {
                     "Text": "Clearing",
@@ -77,27 +77,34 @@
             "GetKey": true
         },
         "River": {
-            "Body": "This is River",
+            "Body": "There is a river running through the forest. It looks like animals come here for fresh water.\nThere is also a cliff face near this river. There is a strange design carved into it, along with a circular divot.",
             "Choices": [
                 {
                     "Text": "Forested Path",
                     "Target": "Forested Path"
                 },
                 {
-                    "Text": "Cave",
+                    "Text": "Place the stone into the divoit",
                     "Target": "Cave",
                     "PreLock": true
                 }
             ]
         },
         "Cave": {
-            "Body": "This is Cave",
+            "Body": "A hidden entrance slides open on the cliff face. You enter the opening and walk into a cave.\nThe cave seems to have a wooden table, a wooden chair, a bedframe, and a few stone tools resting against the wall. There is a fine layer of dust over everything. It seems like someone used to live here.",
             "Choices": [
                 {
                     "Text": "River",
                     "Target": "River"
+                },
+                {
+                    "Text": "Rest",
+                    "Target": "End"
                 }
             ]
+        },
+        "End": {
+            "Body": "You decide that this is a good enough shelter as any and begin to clean up. It looks like a good home for your new life on a deserted island."
         }
     }
 }
